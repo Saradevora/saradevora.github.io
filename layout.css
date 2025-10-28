@@ -1,0 +1,359 @@
+/* Estilos base para Hotel Rural Molino del Agua, Fataga, Gran Canaria */
+
+/* Reset básico */
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li, figure {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  background: #f8f5f0;
+  color: #3b3127;
+  line-height: 1.6;
+}
+
+/* Fondo y overlays */
+.bgded {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+.overlay {
+  background: rgba(42, 36, 22, 0.45);
+  min-height: 100vh;
+}
+
+/* Cabecera */
+#header {
+  background: transparent;
+  padding: 1.5rem 0;
+}
+#logo h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #c9a66b;
+  letter-spacing: 2px;
+  font-size: 2.2rem;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+nav ul li a:hover, nav ul li.active a {
+  background: #c9a66b;
+  color: #fff;
+}
+
+/* Intro / Home */
+#pageintro {
+  padding: 5rem 0 2rem 0;
+  text-align: center;
+}
+#pageintro h3.heading {
+  font-size: 2.5rem;
+  color: #fffbe4;
+  margin: 1rem 0;
+  letter-spacing: 1px;
+}
+#pageintro p {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.btn, .btn.inverse {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0.2rem;
+  transition: background 0.2s, color 0.2s;
+}
+.btn {
+  background: #c9a66b;
+  color: #fff;
+}
+.btn.inverse {
+  background: #fff;
+  color: #c9a66b;
+  border: 2px solid #c9a66b;
+}
+.btn:hover, .btn.inverse:hover {
+  background: #a68844;
+  color: #fff;
+}
+
+/* Secciones generales */
+.wrapper {
+  padding: 2rem 0;
+}
+.sectiontitle {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.sectiontitle h6.heading {
+  font-size: 2rem;
+  color: #c9a66b;
+  margin-bottom: 0.5rem;
+}
+.sectiontitle p {
+  color: #7c6a49;
+  font-size: 1rem;
+}
+/* Historia */
+#historia h6.heading {
+  color: #a68844;
+  font-size: 1.1rem;
+  margin-top: 0.8rem;
+}
+/* Realizar-Reserva */
+#reservas h6.heading {
+  color: #a68844;
+  font-size: 1.1rem;
+  margin-top: 0.8rem;
+}
+/* Habitaciones */
+#habitaciones ul.group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+#habitaciones li.one_quarter {
+  background: #fffbe4;
+  border-radius: 12px;
+  box-shadow: 0 3px 24px rgba(0,0,0,0.08);
+  padding: 1rem;
+  width: 22%;
+  min-width: 230px;
+  text-align: center;
+  transition: box-shadow .2s;
+}
+#habitaciones li.one_quarter:hover {
+  box-shadow: 0 6px 32px rgba(201,166,107,0.16);
+}
+#habitaciones h6.heading {
+  color: #a68844;
+  font-size: 1.1rem;
+  margin-top: 0.8rem;
+}
+#habitaciones img {
+  border-radius: 10px;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+/* Instalaciones */
+#instalaciones ul.nospace.group li article {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(200,150,80,0.10);
+  padding: 24px 16px;
+  margin-bottom: 25px;
+  text-align: center;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: box-shadow 0.2s;
+}
+#instalaciones ul.nospace.group li article:hover {
+  box-shadow: 0 8px 24px rgba(200,150,80,0.18);
+}
+#instalaciones ul.nospace.group li article img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 15px auto;
+  box-shadow: 0 3px 24px rgba(201,166,107,0.18);
+}
+#instalaciones ul.nospace.group li article .heading {
+  margin-bottom: 10px;
+  font-size: 1.15rem;
+  color: #b36b2c;
+}
+#instalaciones ul.nospace.group li article p {
+  font-size: 1rem;
+  color: #6a4a24;
+}
+
+/* Entorno */
+#entorno ul.group.team {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#entorno li.one_quarter figure {
+  background: #fffbe4;
+  border-radius: 10px;
+  padding: 0.7rem;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(201,166,107,0.08);
+}
+#entorno img {
+  border-radius: 8px;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+#entorno figcaption {
+  margin-top: 0.6rem;
+  font-size: 1rem;
+  color: #7c6a49;
+}
+
+/* Opiniones */
+#opiniones article {
+  background: #fffbe4cc;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 12px rgba(201,166,107,0.10);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#opiniones figure img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 3px solid #c9a66b;
+}
+#opiniones blockquote {
+  font-style: italic;
+  color: #7c6a49;
+  margin-left: 1rem;
+}
+
+/* Contacto */
+#contacto .group {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+#contacto .one_half {
+  flex: 1 1 45%;
+  background: #fffbe4;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 16px rgba(201,166,107,0.10);
+}
+#contacto .faico {
+  margin-top: 1.2rem;
+}
+#contacto .faico li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+#contacto .faico i {
+  font-size: 1.4rem;
+  color: #a68844;
+}
+#contacto form input, #contacto form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border-radius: 7px;
+  border: 1px solid #e3d7b2;
+  font-size: 1rem;
+  background: #fff;
+}
+
+/* Footer */
+#footer {
+  background: #a68844;
+  color: #fffbe4;
+  padding: 2rem 0;
+}
+#footer h6.heading {
+  color: #fffbe4;
+  margin-bottom: 1rem;
+}
+#footer a {
+  color: #fffbe4;
+  text-decoration: underline;
+}
+#footer .faico i {
+  font-size: 1.3rem;
+  color: #fffbe4;
+  margin-right: 0.5rem;
+}
+#footer .latestimg img {
+  width: 60px;
+  height: 60px;
+  border-radius: 7px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+#copyright {
+  background: #7c6a49;
+  color: #fffbe4;
+  padding: 1rem 0;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* Botón back to top */
+#backtotop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #c9a66b;
+  color: #fff;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(201,166,107,0.18);
+  z-index: 999;
+  transition: background 0.2s;
+}
+#backtotop:hover {
+  background: #a68844;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  #habitaciones ul.group,
+  #entorno ul.group.team {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  #instalaciones .points,
+  #contacto .group {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  #habitaciones li.one_quarter,
+  #entorno li.one_quarter {
+    width: 100%;
+    min-width: 0;
+  }
+}
